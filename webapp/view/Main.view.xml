@@ -1,9 +1,11 @@
 <mvc:View controllerName="exceluploadtotable.controller.Main"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+    xmlns="sap.m"
+    xmlns:excel="cc.excelUploadButton.v0_2_0">
     <Page id="page" title="{i18n>title}">
         <content>
-            <Table id="table" width="auto">
+            <excel:ExcelUpload id="excelUploadButton" standalone="true" text="Excel Upload Button" columns="customer,product_ID,quantity" uploadButtonPress="uploadButtonPress"/>
+            <Table id="table" items="{tableData>/}" width="auto">
                 <headerToolbar>
                   <Toolbar>
                     <Title text="Excel Upload" titleStyle="H3" level="H3" />
