@@ -2,6 +2,34 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <content />
+        <content>
+            <Table id="table" width="auto">
+                <headerToolbar>
+                  <Toolbar>
+                    <Title text="Excel Upload" titleStyle="H3" level="H3" />
+                  </Toolbar>
+                </headerToolbar>
+                <columns>
+                  <Column>
+                    <Text text="Customer" />
+                  </Column>
+                  <Column>
+                    <Text text="Product ID" />
+                  </Column>
+                  <Column>
+                    <Text text="Quantity" />
+                  </Column>
+                </columns>
+                <items>
+                  <ColumnListItem>
+                    <cells>
+                      <ObjectIdentifier title="{tableData>customer}" text="{tableData>customer}" />
+                        <Text text="{tableData>product_ID}" />
+                        <Text text="{tableData>quantity}" />
+                    </cells>
+                  </ColumnListItem>
+                </items>
+              </Table>
+        </content>
     </Page>
 </mvc:View>
