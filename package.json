@@ -10,10 +10,10 @@
   ],
   "main": "webapp/index.html",
   "dependencies": {
-    "ui5-cc-excelupload-button": "0.4.4"
+    "ui5-cc-spreadsheetimporter-button": "0.11.2"
   },
   "devDependencies": {
-    "@ui5/cli": "^3.0.0",
+    "@ui5/cli": "^3.6.0",
     "@sap/ux-ui5-tooling": "1"
   },
   "scripts": {

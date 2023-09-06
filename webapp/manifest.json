@@ -67,13 +67,13 @@
       ]
     },
     "componentUsages": {
-      "excelUpload": {
-        "name": "cc.excelUpload.v0_16_4"
+      "spreadsheetImporter": {
+        "name": "cc.spreadsheetimporter.v0_25_2"
       }
     },
     "resourceRoots": {
-      "cc.excelUpload.v0_16_4": "./thirdparty/customControl/excelUpload/v0_16_4",
-      "cc.excelUploadButton.v0_4_4": "./thirdparty/customControl/excelUploadButton/v0_4_4"
+      "cc.spreadsheetimporter.button.v0_11_2": "./thirdparty/customControl/spreadsheetImporterButton/v0_11_2",
+      "cc.spreadsheetimporter.v0_25_2": "./thirdparty/customControl/spreadsheetImporter/v0_25_2"
     },
     "routing": {
       "config": {
@@ -89,9 +89,7 @@
         {
           "name": "RouteMain",
           "pattern": ":?query:",
-          "target": [
-            "TargetMain"
-          ]
+          "target": ["TargetMain"]
         }
       ],
       "targets": {

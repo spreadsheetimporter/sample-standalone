@@ -16,7 +16,8 @@ sap.ui.define([
 
             uploadButtonPress(oEvent) {
                 const model = this.getView().getModel("tableData");
-                model.setData(oEvent.getParameter("payload"));
+                // model.setData(oEvent.getParameter("payload")); <-- this show full data including parsed data
+                model.setData(oEvent.getParameter("rawData"));
             }
         });
     });
