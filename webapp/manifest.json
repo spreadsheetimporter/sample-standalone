@@ -45,6 +45,9 @@
         "sap.ui.generic.app": {},
         "sap.ui.table": {},
         "sap.ushell": {}
+      },
+      "components": {
+        "cc.spreadsheetimporter.v0_26_1": {}
       }
     },
     "contentDensities": {
@@ -68,12 +71,11 @@
     },
     "componentUsages": {
       "spreadsheetImporter": {
-        "name": "cc.spreadsheetimporter.v0_25_2"
+        "name": "cc.spreadsheetimporter.v0_26_1"
       }
     },
     "resourceRoots": {
-      "cc.spreadsheetimporter.button.v0_11_2": "./thirdparty/customControl/spreadsheetImporterButton/v0_11_2",
-      "cc.spreadsheetimporter.v0_25_2": "./thirdparty/customControl/spreadsheetImporter/v0_25_2"
+      "cc.spreadsheetimporter.v0_26_1": "./thirdparty/customControl/spreadsheetImporter/v0_26_1"
     },
     "routing": {
       "config": {
