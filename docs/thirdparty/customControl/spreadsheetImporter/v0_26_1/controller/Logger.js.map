@@ -1,0 +1,1 @@
+{"version":3,"file":"Logger.js","names":["sap","ui","define","ManagedObject","Logger","extend","returnObject","_returnObject","object"],"sources":["Logger-dbg.js"],"mappings":"AAAA,aAEAA,IAAIC,GAAGC,OAAO,CAAC,6BAA8B,SAAUC,GACrD,aAKA,MAAMC,EAASD,EAAcE,OAAO,wCAAyC,CAC3EC,aAAc,SAASC,EAAcC,GACnC,OAAOA,CACT,IAEF,OAAOJ,CACT"}

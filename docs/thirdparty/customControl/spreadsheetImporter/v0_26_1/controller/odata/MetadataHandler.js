@@ -1,0 +1,2 @@
+"use strict";sap.ui.define(["sap/ui/base/ManagedObject"],function(e){"use strict";const t=e.extend("cc.spreadsheetimporter.v0_26_1.MetadataHandler",{constructor:function t(n){e.prototype.constructor.call(this);this.spreadsheetUploadController=n},parseI18nText:function e(t,n){let s="";const r=t.slice(1,-1);const c=r.split(">");if(c.length===2){const e=c[0];const t=c[1];const r=n.getModel(e).getResourceBundle();s=r.getText(t,undefined,true)}if(!s||s===""){return""}else{return s}}});return t});
+//# sourceMappingURL=MetadataHandler.js.map

@@ -1,0 +1,48 @@
+<mvc:View controllerName="exceluploadtotable.controller.Main"
+  xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  >
+  <Page id="page" title="{i18n>title}">
+    <content>
+      <core:ComponentContainer width="100%" usage="spreadsheetImporter" propagateModel="true" async="true" 
+      settings="{
+        standalone:true,
+        readAllSheets:true,
+        columns: ['customer,product_ID,quantity'],
+        componentContainerData:{
+          uploadButtonPress:'uploadButtonPress',
+          buttonText:'Excel Upload Button'
+          }
+        }" />
+      <!-- <excel:SpreadsheetUpload id="excelUploadButton" standalone="true" text="Excel Upload Button" readAllSheets="true" columns="customer,product_ID,quantity" uploadButtonPress="uploadButtonPress"/> -->
+      <Table id="table" items="{tableData>/}" width="auto">
+        <headerToolbar>
+          <Toolbar>
+            <Title text="Excel Upload" titleStyle="H3" level="H3" />
+          </Toolbar>
+        </headerToolbar>
+        <columns>
+          <Column>
+            <Text text="Customer" />
+          </Column>
+          <Column>
+            <Text text="Product ID" />
+          </Column>
+          <Column>
+            <Text text="Quantity" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <cells>
+              <ObjectIdentifier title="{tableData>customer}" text="{tableData>customer}" />
+              <Text text="{tableData>product_ID}" />
+              <Text text="{tableData>quantity}" />
+            </cells>
+          </ColumnListItem>
+        </items>
+      </Table>
+    </content>
+  </Page>
+</mvc:View>

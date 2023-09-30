@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/model/json/JSONModel"],function(e,t){"use strict";return e.extend("exceluploadtotable.controller.Main",{onInit:function(){var e=new t;this.getView().setModel(e,"tableData")},uploadButtonPress(e){const t=this.getView().getModel("tableData");t.setData(e.getParameter("rawData"))}})});
+//# sourceMappingURL=Main.controller.js.map
